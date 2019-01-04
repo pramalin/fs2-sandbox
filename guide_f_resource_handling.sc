@@ -48,5 +48,5 @@ object guide_f_resource_handling {
 		FS2 guarantees once and only once semantics for resource cleanup actions introduced by the Stream.bracket
 		function.
 	*/
-
+	
 }

@@ -53,5 +53,5 @@ object guide_a_build_streams {
      Of these, only flatMap is primitive, the rest are built using combinations of various
       other primitives. We'll take a look at how that works shortly.
 	*/
-
+	
 }

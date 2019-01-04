@@ -26,4 +26,5 @@ object guide_b_chunk {
   as chunk based algorithms are often faster than their segment based equivalents and
    almost always significantly simpler.
 	*/
+	
 }

@@ -18,5 +18,4 @@ object guide_g_ex01 {
   (Stream(1, 2) ++ (throw new Exception("nooo!!!"))).attempt.toList
                                                   //> res3: List[Either[Throwable,Int]] = List(Right(1), Right(2), Left(java.lang.
                                                   //| Exception: nooo!!!))
-
 }

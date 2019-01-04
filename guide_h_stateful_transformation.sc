@@ -130,6 +130,7 @@ object guide_h_stateful_transformation {
 	Stream("Alice","Bob","Carol").intersperse("|").toList
                                                   //> res4: List[String] = List(Alice, |, Bob, |, Carol)
 	
-//	Stream.range(1,10).scan(0)(_ + _).toList // running sum
+//	Stream.range(1,10).scan(0)(_ + _).toList
+	 // running sum
 		
 }

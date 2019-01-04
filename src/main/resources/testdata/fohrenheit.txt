@@ -1,0 +1,4 @@
+// fohrenheit values
+0
+10
+100

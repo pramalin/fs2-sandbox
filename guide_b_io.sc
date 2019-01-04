@@ -74,4 +74,5 @@ object guide_b_io {
    implicit Sync[F] — FS2 needs to know how to catch errors that occur during evaluation of
    F effects, how to suspend computations.
   */
+ 
 }
