@@ -1,4 +1,4 @@
-object guide_g_ex01 {
+object g_ex01 {
   import fs2.Stream
   import cats.effect.IO
 

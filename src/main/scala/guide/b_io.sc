@@ -1,4 +1,4 @@
-object guide_b_io {
+object b_io {
   import fs2.Stream
   import cats.effect.IO
 

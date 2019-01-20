@@ -1,4 +1,4 @@
-object guide_e_error_handling {
+object e_error_handling {
   import fs2.Stream
   import cats.effect.IO
 

@@ -1,4 +1,4 @@
-object guide_c_ops {
+object c_ops {
   import fs2.Stream
   import cats.effect.IO
 

@@ -1,4 +1,4 @@
-object guide_b_chunk {
+object b_chunk {
   import fs2.Stream
 
   /*

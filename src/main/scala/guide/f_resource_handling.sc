@@ -1,4 +1,4 @@
-object guide_f_resource_handling {
+object f_resource_handling {
   import fs2.Stream
   import cats.effect.IO
 
@@ -11,9 +11,9 @@ object guide_f_resource_handling {
                                                   //> count  : java.util.concurrent.atomic.AtomicLong = 0
 
   val acquire = IO { println("incremented: " + count.incrementAndGet); () }
-                                                  //> acquire  : cats.effect.IO[Unit] = IO$1641808846
+                                                  //> acquire  : cats.effect.IO[Unit] = IO$310656974
   val release = IO { println("decremented: " + count.decrementAndGet); () }
-                                                  //> release  : cats.effect.IO[Unit] = IO$750044075
+                                                  //> release  : cats.effect.IO[Unit] = IO$159259014
 
 	val err = Stream.raiseError[IO](new Exception("oh noes!"))
                                                   //> err  : fs2.Stream[cats.effect.IO,fs2.INothing] = Stream(..)
@@ -22,16 +22,15 @@ object guide_f_resource_handling {
                                                   //> incremented: 1
                                                   //| decremented: 0
                                                   //| java.lang.Exception: oh noes!
-                                                  //| 	at guide_f_resource_handling$.$anonfun$main$1(guide_f_resource_handling.
-                                                  //| scala:15)
+                                                  //| 	at f_resource_handling$.$anonfun$main$1(f_resource_handling.scala:15)
                                                   //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$anonfun$$ex
                                                   //| ecute$1(WorksheetSupport.scala:76)
                                                   //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
                                                   //| orksheetSupport.scala:65)
                                                   //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
                                                   //| ksheetSupport.scala:76)
-                                                  //| 	at guide_f_resource_handling$.main(guide_f_resource_handling.scala:3)
-                                                  //| 	at guide_f_resource_handling.main(guide_f_resource_handling.scala)
+                                                  //| 	at f_resource_handling$.main(f_resource_handling.scala:3)
+                                                  //| 	at f_resource_handling.main(f_resource_handling.scala)
 
   count.get
 

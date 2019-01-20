@@ -1,4 +1,4 @@
-object guide_h_stateful_transformation {
+object h_stateful_transformation {
 
   /*
 		Statefully transforming streams

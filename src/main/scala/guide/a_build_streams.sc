@@ -1,6 +1,6 @@
 import fs2.Stream
 
-object guide_a_build_streams {
+object a_build_streams {
 
   /*
 	  Overview
@@ -11,7 +11,8 @@ object guide_a_build_streams {
 		We’ll consider each of these in this guide.
 
 		Building streams
-		A Stream[F,O] (formerly Process) represents a discrete stream of O values which may request evaluation of F effects. We’ll call F the effect type and O the output type. Let’s look at some examples:
+		A Stream[F,O] (formerly Process) represents a discrete stream of O values which may request evaluation of F effects.
+		We’ll call F the effect type and O the output type. Let’s look at some examples:
 	*/
 
   val s0 = Stream.empty                           //> s0  : fs2.Stream[fs2.Pure,fs2.INothing] = Stream(..)
@@ -21,7 +22,9 @@ object guide_a_build_streams {
                                                   //> s1b  : fs2.Stream[[x]fs2.Pure[x],Int] = Stream(..)
 
   /*
-		The s1 stream has the type Stream[Pure,Int]. Its output type is of course Int, and its effect type is Pure, which means it does not require evaluation of any effects to produce its output. Streams that don’t use any effects are called pure streams. You can convert a pure stream to a List or Vector using:
+		The s1 stream has the type Stream[Pure,Int]. Its output type is of course Int, and its effect type is Pure,
+		which means it does not require evaluation of any effects to produce its output. Streams that don’t use any
+		effects are called pure streams. You can convert a pure stream to a List or Vector using:
 	*/
   s1.toList                                       //> res0: List[Int] = List(1)
   s1.toVector                                     //> res1: Vector[Int] = Vector(1)
